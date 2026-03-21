@@ -134,20 +134,6 @@ Cette semaine en Data Science & IA : [synthèse en 3-4 phrases des tendances du 
 
 ---
 
-## 👤 Profil Utilisateur (par défaut)
-
-Le profil par défaut est configuré pour les thématiques suivantes, modifiables dans `config/profile.yaml` :
-
-- Data Science & Machine Learning
-- Deep Learning & Réseaux de Neurones (CNN, Transformers…)
-- LLM & IA Générative
-- Big Data & Ingénierie des Données
-- Visualisation de Données
-- Python, R, SQL
-- Actualité des outils (Hugging Face, TensorFlow, PySpark…)
-
----
-
 ## 🚀 Installation & Lancement
 
 ```bash
@@ -160,7 +146,7 @@ pip install -r requirements.txt
 
 # Configurer les variables d'environnement
 cp .env.example .env
-# → Renseigner ANTHROPIC_API_KEY, SMTP_PASSWORD, etc.
+# → Renseigner MISTRAL_API_KEY, SMTP_PASSWORD, etc.
 
 # Lancer manuellement
 python main.py
@@ -171,44 +157,6 @@ streamlit run output/dashboard.py
 
 ---
 
-## ⚙️ Configuration
-
-Le fichier `config/profile.yaml` permet de personnaliser :
-
-```yaml
-profile:
-  keywords:
-    - "machine learning"
-    - "deep learning"
-    - "LLM"
-    - "data science"
-    - "python"
-  language: "fr+en"        # Langues acceptées
-  max_articles: 5          # Nombre d'articles dans le digest
-  schedule: "08:00"        # Heure d'envoi quotidien
-
-output:
-  email: "remi.pierron01@etu.univ-poitiers.fr"
-  send_email: true
-  dashboard: true
-```
-
----
-
-## 🗺️ Roadmap
-
-- [x] Définition du cahier des charges
-- [ ] Mise en place de la collecte RSS
-- [ ] Intégration de la recherche web temps réel (Claude API)
-- [ ] Pipeline de filtrage et scoring
-- [ ] Résumé automatique par LLM
-- [ ] Envoi e-mail du digest
-- [ ] Dashboard Streamlit
-- [ ] Déduplication et historique SQLite
-- [ ] Déploiement automatisé (cron / GitHub Actions)
-- [ ] Interface de configuration du profil
-
----
 
 ## 👨‍💻 Auteur
 
