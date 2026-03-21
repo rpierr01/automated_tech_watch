@@ -1,0 +1,30 @@
+{
+  "date": "21 March 2026",
+  "generated_at": "2026-03-21T23:00:04.748277",
+  "general_summary": "Aujourd’hui, l’optimisation et la simplification des workflows data restent au cœur des préoccupations en Data Science. L’article *\"Escaping the SQL Jungle\"* met en lumière les défis croissants liés à la complexité des requêtes SQL dans les pipelines modernes, soulignant l’émergence d’outils low-code et de frameworks comme dbt pour rationaliser l’accès aux données. Parallèlement, *\"A Gentle Introduction to Nonlinear Constrained Optimization\"* rappelle l’importance des méthodes avancées d’optimisation, notamment pour les problèmes non linéaires, avec des applications en IA (ex : apprentissage par renforcement) et en recherche opérationnelle, où les approximations linéaires par morceaux gagnent en popularité.\n\nCes sujets reflètent deux tendances clés : d’un côté, la démocratisation des outils data pour les non-experts (via des interfaces intuitives ou des abstractions), et de l’autre, l’approfondissement des techniques mathématiques pour résoudre des problèmes toujours plus complexes. Pour un étudiant, c’est l’occasion de creuser les alternatives à SQL (comme les langages déclaratifs ou les solutions serverless) et de maîtriser les bases de l’optimisation sous contraintes, un atout pour les projets en IA appliquée ou en ingénierie des données.",
+  "articles": [
+    {
+      "title": "Escaping the SQL Jungle",
+      "url": "https://towardsdatascience.com/escaping-the-sql-jungle/",
+      "source": "Towards Data Science",
+      "summary": "Most data platforms don’t break overnight; they grow into complexity, query by query. Over time, business logic spreads across SQL scripts, dashboards, and scheduled jobs until the system becomes a “SQL jungle.” This article explores how that happens and how to bring structure back. \n The post  Escaping the SQL Jungle  appeared first on  Towards Data Science .",
+      "published": "2026-03-21T15:00:00+00:00",
+      "weight": 1.2,
+      "language": "en",
+      "score": 6.0,
+      "llm_summary": "**Sujet principal** : L’article explique comment les plateformes de données deviennent progressivement ingérables (*SQL jungle*) à force d’ajouts de requêtes, de logiques métiers dispersées et de scripts non documentés, jusqu’à rendre le système ingérable.\n\n**Résultats clés** : Il propose des solutions pour structurer ces environnements : centralisation des logiques métiers dans des vues ou des modèles, automatisation des tâches répétitives, et adoption de bonnes pratiques (modularité, documentation, tests).\n\n**Pertinence pour la Data Science/IA** : Crucial pour éviter la dette technique dans les projets data, où la complexité des requêtes SQL peut ralentir l’innovation. Une approche organisée améliore la maintenabilité, la collaboration et la fiabilité des pipelines, essentiels pour l’IA et l’analyse prédictive."
+    },
+    {
+      "title": "A Gentle Introduction to Nonlinear Constrained Optimization with Piecewise Linear Approximations",
+      "url": "https://towardsdatascience.com/a-gentle-introduction-to-nonlinear-constrained-optimization-with-piecewise-linear-approximations/",
+      "source": "Towards Data Science",
+      "summary": "Piecewise linear approximations are a practical way to handle nonlinear constrained models using LP/MIP \nsolvers like Gurobi. \n The post  A Gentle Introduction to Nonlinear Constrained Optimization with Piecewise Linear Approximations  appeared first on  Towards Data Science .",
+      "published": "2026-03-21T13:00:00+00:00",
+      "weight": 1.2,
+      "language": "en",
+      "score": 6.0,
+      "llm_summary": "**Résumé :**\n\nL’article explique comment les approximations linéaires par morceaux (Piecewise Linear Approximations) permettent de résoudre des problèmes d’optimisation non linéaire sous contraintes en utilisant des solveurs linéaires ou mixtes (LP/MIP) comme Gurobi. Cette méthode transforme des fonctions non linéaires en segments linéaires pour exploiter l’efficacité des algorithmes d’optimisation existants. Pour un data scientist ou un expert en IA, cette approche offre une solution pratique pour intégrer des contraintes complexes dans des modèles linéaires, tout en réduisant la complexité computationnelle. Elle est particulièrement utile pour des applications comme la planification, la logistique ou l’apprentissage automatique où les contraintes non linéaires sont courantes."
+    }
+  ],
+  "profile_name": "Rémi Pierron"
+}
