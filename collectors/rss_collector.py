@@ -15,7 +15,7 @@ def load_sources(config_path="config/sources.yaml"):
         return yaml.safe_load(f)["sources"]["rss"]
 
 
-def fetch_rss_articles(max_age_hours=24):
+def fetch_rss_articles(max_age_hours=168):
     """
     Parcourt tous les flux RSS et retourne les articles des dernières max_age_hours heures.
     Chaque article est un dict : {title, url, source, summary, published, weight}
@@ -27,7 +27,10 @@ def fetch_rss_articles(max_age_hours=24):
     for source in sources:
         print(f"  → Collecte : {source['name']}")
         try:
-            feed = feedparser.parse(source["url"])
+            feed = feedparser.parse(
+                source["url"],
+                agent="TechWatch/1.0 (veille automatisée étudiante; contact: remi.pierron01@etu.univ-poitiers.fr)"
+            )
             for entry in feed.entries[:15]:  # max 15 articles par source
                 # Date de publication
                 published = None
@@ -36,8 +39,8 @@ def fetch_rss_articles(max_age_hours=24):
                 elif hasattr(entry, "updated_parsed") and entry.updated_parsed:
                     published = datetime(*entry.updated_parsed[:6], tzinfo=timezone.utc)
 
-                # Filtrer les articles trop vieux
-                if published and published < cutoff:
+                # Filtrer les articles trop vieux (garder si date absente)
+                if published is not None and published < cutoff:
                     continue
 
                 # Résumé brut

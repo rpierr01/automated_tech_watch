@@ -4,7 +4,6 @@ Score chaque article par pertinence selon le profil utilisateur.
 """
 
 import yaml
-import re
 
 
 def load_profile(config_path="config/profile.yaml"):
@@ -21,14 +20,15 @@ def score_article(article, keywords):
     score = 0
     title = article.get("title", "").lower()
     summary = article.get("summary", "").lower()
+    # Nettoyer les accents et caractères spéciaux pour le matching
+    full_text = title + " " + summary
 
     for keyword in keywords:
         kw = keyword.lower()
-        # Mot-clé dans le titre → fort signal
-        if re.search(r'\b' + re.escape(kw) + r'\b', title):
+        # Matching simple par inclusion (robuste aux accents et tirets)
+        if kw in title:
             score += 15
-        # Mot-clé dans le résumé → signal modéré
-        if re.search(r'\b' + re.escape(kw) + r'\b', summary):
+        elif kw in summary:
             score += 5
 
     # Bonus source (weight définie dans sources.yaml)
@@ -52,7 +52,7 @@ def filter_and_rank(articles, top_n=5):
     scored = []
     for article in articles:
         s = score_article(article, keywords)
-        if s > 0:  # On garde uniquement les articles pertinents
+        if s >= 5:  # Seuil minimal de pertinence
             article["score"] = s
             scored.append(article)
 

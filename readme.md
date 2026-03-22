@@ -45,7 +45,7 @@ L'outil est pensé comme un **digest quotidien intelligent**, sans intervention 
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────┐
-│          TRAITEMENT LLM (Claude API / HF)               │
+│          TRAITEMENT LLM (Mistral API / HF)               │
 │  Résumé par article · Résumé général · Scoring final    │
 └────────────────────────┬────────────────────────────────┘
                          │
@@ -65,7 +65,7 @@ L'outil est pensé comme un **digest quotidien intelligent**, sans intervention 
 | Langage principal | Python 3.11+ |
 | Collecte RSS | `feedparser` |
 | Scraping web | `requests`, `BeautifulSoup4` |
-| LLM | Claude API (`claude-sonnet`) |
+| LLM | Mistral API (`Mistral Small 4`) |
 | Recherche web temps réel | Claude API + web search tool |
 | Planification | `schedule` / `cron` |
 | Envoi e-mail | `smtplib` |
