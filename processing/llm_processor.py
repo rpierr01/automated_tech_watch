@@ -1,13 +1,13 @@
 """
 processing/llm_processor.py
-Utilise l'API Gemini avec Google Search pour résumer les articles
+Utilise un modèle local via Ollama pour résumer les articles
 et produire un résumé général de l'actualité tech.
 """
 
 import os
+import requests
 import yaml
 from datetime import datetime
-from mistralai.client import Mistral
 
 
 def load_profile(config_path="config/profile.yaml"):
@@ -16,15 +16,33 @@ def load_profile(config_path="config/profile.yaml"):
 
 
 def get_client():
-    api_key = os.getenv("MISTRAL_API_KEY")
-    if not api_key:
-        raise ValueError("❌ MISTRAL_API_KEY manquante. Vérifie ton fichier .env")
+    return {
+        "base_url": os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").rstrip("/"),
+        "model": os.getenv("OLLAMA_MODEL", "mistral"),
+        "timeout": int(os.getenv("OLLAMA_TIMEOUT", "120")),
+    }
 
-    # Initialize the client with the API key
-    client = Mistral(api_key=api_key)
 
-    # Return the client instance instead of a model wrapper
-    return client
+def ollama_chat(client, prompt):
+    payload = {
+        "model": client["model"],
+        "messages": [{"role": "user", "content": prompt}],
+        "stream": False,
+    }
+
+    response = requests.post(
+        f"{client['base_url']}/api/chat",
+        json=payload,
+        timeout=client["timeout"],
+    )
+    response.raise_for_status()
+    data = response.json()
+
+    content = data.get("message", {}).get("content")
+    if not isinstance(content, str):
+        raise ValueError("Réponse Ollama invalide: champ 'message.content' manquant")
+
+    return content.strip()
 
 
 def summarize_article(client, article):
@@ -50,11 +68,7 @@ Produis un résumé en français en 3 à 5 phrases maximum. Sois concis, informa
 Ne commence pas par "Cet article" ou "L'article". Va droit au but."""
 
     try:
-        response = client.chat.complete(
-            model="mistral-small-2603",
-            messages=[{"role": "user", "content": prompt}],
-        )
-        return response.choices[0].message.content.strip()
+        return ollama_chat(client, prompt)
     except Exception as e:
         print(f"    ⚠️  Erreur LLM pour '{article['title']}' : {e}")
         return article.get("summary", "Résumé non disponible.")
@@ -85,11 +99,7 @@ Ce résumé doit :
 Commence directement par le résumé, sans titre ni introduction."""
 
     try:
-        response = client.chat.complete(
-            model="mistral-large-latest",
-            messages=[{"role": "user", "content": prompt}],
-        )
-        return response.choices[0].message.content.strip()
+        return ollama_chat(client, prompt)
     except Exception as e:
         print(f"    ⚠️  Erreur LLM résumé général : {e}")
         return "Résumé général non disponible."

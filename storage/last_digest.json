@@ -1,8 +1,41 @@
 {
   "date": "22 March 2026",
-  "generated_at": "2026-03-22T10:24:13.263684",
-  "general_summary": "Aujourd’hui, l’actualité en Data Science et IA met en lumière **l’importance croissante des datasets spécialisés** avec la sortie sur Hugging Face d’un jeu de données longitudinal sur l’art d’un même artiste, couvrant 50 ans – une ressource précieuse pour étudier l’évolution des styles ou les biais dans les modèles de génération. Les discussions autour de la **formation et de l’insertion professionnelle** dominent aussi, avec des conseils pour les étudiants (cours gratuits certifiants, parcours type pour devenir ingénieur ML) et une réflexion sur la **transformation des métiers tech** : *Le Monde* souligne que la valeur des ingénieurs se mesure désormais à leur maîtrise des outils d’IA, plus qu’à leur temps de travail. Enfin, les échanges sur les **bases du machine learning** (comme le \"Day 2\" d’un défi d’apprentissage) rappellent que les fondamentaux restent cruciaux, même dans un écosystème en constante évolution. Une journée qui illustre à la fois **l’innovation technique, les enjeux éthiques et les mutations du marché du travail** – des pistes à explorer pour rester compétitif !",
+  "generated_at": "2026-03-22T12:32:04.731899",
+  "general_summary": "Les discussions récentes sur les réseaux sociaux technologiques mettent en lumière plusieurs tendances actuelles dans le domaine de la science des données et de l'intelligence artificielle :\n\n1. L'importance croissante du développement de compétences surpassant celle du niveau d'école - les étudiants en Data Science doivent prendre soin de se concentrer sur leurs compétences plutôt que sur leur institution universitaire.\n2. Les attentes élevées des nouvelles recrues en ingénierie AI, avec une demande croissante pour un ensemble large et varié de compétences dans le domaine de l'apprentissage automatique et de la science des données.\n3. La question de savoir si l'industrie a effectivement réduit la recherche académique en machine learning vers 2026, avec une tendance croissante à travailler sur des problèmes pratiques plutôt que théoriques dans le secteur privé.\n4. La publication d'un ensemble de données artistiques uniques couvrant cinq décennies sur Hugging Face, offrant de nombreuses possibilités pour l'exploration du style évolutif, de la représentation des figures et des données éthiques dans le domaine de l'apprentissage automatique.\n5. Les perspectives pour les étudiants souhaitant devenir ingénieurs AI/machine learning en se concentrant sur leur formation académique et leur engagement avec la communauté du secteur, tout en restant attentifs aux nouvelles tendances et aux défis dans le domaine de la science des données et de l'intelligence artificielle.",
   "articles": [
+    {
+      "title": "Starting college soon — am I right to prioritize skills over college tier?",
+      "url": "https://www.reddit.com/r/learnmachinelearning/comments/1s0ighy/starting_college_soon_am_i_right_to_prioritize/",
+      "source": "Reddit — r/learnmachinelearning",
+      "summary": "Hi everyone,   I’m about to start college in 2–3 months, and I wanted some honest advice about my plan.   From the past few years, I’ve been deeply into programming and have already explored quite a few areas:     C/C++ (mainly for DSA)   GoLang (basic cloud concepts)   Web dev (HTML, CSS, JS, React)   Solidity (blockchain)   Python (main language)     My main focus is  AI/ML/DL . I’ve worked on:     Machine Learning   Deep Learning (ANN, CNN, RNN, etc)   Generative AI, LLMs, RAG, etc   Currentl",
+      "published": "2026-03-22T10:43:14+00:00",
+      "weight": 1.2,
+      "language": "en",
+      "score": 30.0,
+      "llm_summary": "L'étudiant en programme de premier cycle prévoyant d'entrer dans l'année prochaine cherche des conseils sur sa stratégie de priorisation. Son intérêt est centré sur les compétences plutôt que sur la réputation de son établissement. Il a déjà acquis une variété de compétences en programmation, notamment C/C++, GoLang, web développement, Solidity et Python, avec un focus principal sur l'IA/ML/DL. Les commentateurs soulignent que la qualité des compétences est plus importante que le niveau de son établissement pour se distinguer en tant qu'étudiant en Data Science / IA."
+    },
+    {
+      "title": "What is expected from new grad AI engineers?",
+      "url": "https://www.reddit.com/r/datascience/comments/1s0he8q/what_is_expected_from_new_grad_ai_engineers/",
+      "source": "Reddit — r/datascience",
+      "summary": "I’m a stats/ds student aiming to become an AI engineer after graduation. I’ve been doing projects: deep learning, LLM fine-tuning, langgraph agents with tools, and RAG systems. My work is in Python, with a couple of projects written in modular code deployed via Docker and FastAPI on huggingface spaces.   But not being a CS student i am not sure what i am missing:   - Do i have to know design patterns/gang of 4? I know oop though   - What do i have to know of software architectures?   - What do i",
+      "published": "2026-03-22T09:37:26+00:00",
+      "weight": 1.3,
+      "language": "en",
+      "score": 26.0,
+      "llm_summary": "Étudiant en Data Science prêt à devenir ingénieur en IA, il recherche connaissances supplémentaires sur la compétence requise pour son profil. L'utilisateur a déjà acquis des compétences en apprentissage automatique profond, LangModel fine-tuning, agents de langue et RAG systèmes, avec une expérience en Python. Cependant, il manque de connaître les design patterns Gang of Four, les architectures logiciels et autres compétences pour son rôle d'ingénieur en IA."
+    },
+    {
+      "title": "[D] Has industry effectively killed off academic machine learning research in 2026?",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1s0hcit/d_has_industry_effectively_killed_off_academic/",
+      "source": "Reddit — r/MachineLearning",
+      "summary": "This wasn't always the case, but now almost any research topic in machine learning that you can imagine is now being done MUCH BETTER in industry due to a glut of compute and endless international talents.   The only ones left in academia seems to be:     niche research that delves very deeply into how some older models work (e.g., GAN, spiking NN), knowing full-well they will never see the light of day in actual applications, because those very applications are being done better by whatever ind",
+      "published": "2026-03-22T09:34:10+00:00",
+      "weight": 1.4,
+      "language": "en",
+      "score": 21.0,
+      "llm_summary": "Industrie a éclipsé la recherche académique en apprentissage automatique en 2026, avec une surabondance de calcul et un accès international à un grand nombre de talents. Seuls restent dans l'académie des sujets spécialisés qui exploreraient très profondément les anciens modèles tels que GAN ou réseaux neuronaux en spike, bien conscients qu'ils n'auront jamais de visibilité pratique car ces applications sont déjà meilleures réalisées par l'industrie.\n\nCette tendance peut être d'intérêt pour un profil en Data Science/IA car elle met en lumière la nécessité d'une approche pluridisciplinaire, associant la recherche académique à la pratique industrielle pour obtenir des résultats pratiques et innovants."
+    },
     {
       "title": "[D] Single-artist longitudinal fine art dataset spanning 5 decades now on Hugging Face — potential applications in style evolution, figure representation, and ethical training data",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1s0dce7/d_singleartist_longitudinal_fine_art_dataset/",
@@ -12,18 +45,7 @@
       "weight": 1.4,
       "language": "en",
       "score": 21.0,
-      "llm_summary": "**Sujet principal** : Un artiste new-yorkais a publié un jeu de données longitudinal sur Hugging Face, regroupant **3 000 à 4 000 œuvres** (et bientôt le double) représentant **le corps humain sur 5 décennies**, couvrant divers médias (peinture, dessin, gravure, etc.).\n\n**Résultats clés** : Ce *dataset* unique, centré sur un seul artiste et un thème constant, permet d’étudier **l’évolution stylistique**, les **représentations figuratives** et les biais dans l’IA, avec un potentiel pour des modèles d’analyse artistique ou de génération.\n\n**Pertinence Data Science/IA** : Idéal pour entraîner des algorithmes de **vision par ordinateur** (détection de style, segmentation) ou explorer des **biais de formation** (ex. : diversité des poses, éthique des données artistiques). Son format ouvert favorise la reproductibilité et l’innovation en ML appliqué à l’art."
-    },
-    {
-      "title": "Day 2 Machine Learning",
-      "url": "https://www.reddit.com/r/learnmachinelearning/comments/1s0eidi/day_2_machine_learning/",
-      "source": "Reddit — r/learnmachinelearning",
-      "summary": "Day 1 Final UPDATE:   Campus X -: Finished 4 vids till 11th vid.   Pandas -: No progress.   Day 2 goals:   Campus X -: 5 vids   Pandas -: 4 topics      submitted by     /u/Hot_Hand4260      [link]   [comments]",
-      "published": "2026-03-22T06:33:50+00:00",
-      "weight": 1.2,
-      "language": "en",
-      "score": 18.0,
-      "llm_summary": "**Sujet principal** : Ce post Reddit relate le compte-rendu d’un étudiant en *Day 2* d’un apprentissage en *Machine Learning*, détaillant ses objectifs et progrès dans deux axes : le cours *Campus X* (5 vidéos visionnées) et l’apprentissage de *Pandas* (4 sujets abordés).\n\n**Résultats clés** : L’étudiant montre une progression concrète mais inégale, avec un focus sur la théorie (Campus X) et des lacunes persistantes en manipulation de données (Pandas). L’absence de détails sur les concepts maîtrisés ou les difficultés rencontrées limite l’évaluation de la qualité de l’apprentissage.\n\n**Pertinence Data Science/IA** : Ce type de suivi illustre l’importance d’une **méthode structurée** (ex : alterner théorie et pratique) et d’un **équilibre entre outils** (Pandas) et concepts (ML). Idéal pour les débutants en Data Science, ce retour d’expérience souligne les pièges courants (procrastination, surcharge cognitive) et l’utilité des *milestones* clairs."
+      "llm_summary": "Dataset de 3000 à 4000 images d'un artiste figuratif new-yorkais, présent dans les collections du Metropolitan Museum of Art, MoMA et autres institutions prestigieuses, a été publié sur Hugging Face sous la forme d'un catalogue raisonné ouvert. L'ensemble couvre l'évolution de la figure humaine au fil des cinq dernières décennies en utilisant diverses techniques médiatiques. Sa pertinence pour le domaine Data Science/IA réside dans ses applications possibles aux domaines de l'évolution de style, représentation figurative et données éthiques."
     },
     {
       "title": "What should I do as an undergraduate who wants to be an Ai/machine learning engineer?",
@@ -34,29 +56,7 @@
       "weight": 1.2,
       "language": "en",
       "score": 18.0,
-      "llm_summary": "**Sujet principal** : L’article aborde les actions concrètes pour un étudiant de premier cycle souhaitant devenir ingénieur en IA/machine learning (ML), au-delà des cours et petits projets.\n\n**Conseils clés** : L’auteur recommande de se spécialiser dans un domaine (vision par ordinateur, NLP, etc.), de contribuer à des projets open source, de participer à des compétitions (Kaggle) et de construire un portfolio solide. L’accent est mis sur l’apprentissage par la pratique et le réseautage.\n\n**Pertinence pour la Data Science/IA** : Idéal pour un étudiant en Data Science cherchant à se différencier, en combinant expertise technique, expérience collaborative et visibilité dans la communauté ML."
-    },
-    {
-      "title": "Free Artificial Intelligence Courses with Certificate",
-      "url": "https://www.reddit.com/r/learnmachinelearning/comments/1s0f5vy/free_artificial_intelligence_courses_with/",
-      "source": "Reddit — r/learnmachinelearning",
-      "summary": "in the present time lots of Best AI Courses Online available worldwide. everyone easily enrol on it and learn different types of AI for different purpose. for  Free Artificial Intelligence Courses with Certificate  you can visit on it.       submitted by     /u/Dismal_Statement_634      [link]   [comments]",
-      "published": "2026-03-22T07:13:36+00:00",
-      "weight": 1.2,
-      "language": "en",
-      "score": 18.0,
-      "llm_summary": "**Résumé :**\n\nCe post Reddit met en avant des **cours gratuits d'Intelligence Artificielle (IA) avec certificat**, accessibles en ligne pour apprendre divers concepts (machine learning, deep learning, etc.). L’auteur souligne la facilité d’inscription et la diversité des formations disponibles, adaptées à différents besoins. Pour un étudiant en **Data Science/IA**, ces ressources offrent une opportunité de **compléter ses compétences** sans coût, tout en obtenant une validation officielle. Idéal pour se former à son rythme ou explorer de nouveaux domaines. Le lien partagé renvoie vers des plateformes proposant ces formations."
-    },
-    {
-      "title": "« La valeur de l’ingénieur ou de consultant se mesure désormais moins en heures travaillées que dans sa maîtrise des systèmes d’IA »",
-      "url": "https://www.lemonde.fr/idees/article/2026/03/22/la-valeur-de-l-ingenieur-ou-de-consultant-se-mesure-desormais-moins-en-heures-travaillees-que-dans-sa-maitrise-des-systemes-d-ia_6673699_3232.html",
-      "source": "Le Monde - Intelligence Artificielle",
-      "summary": "L’essor de l’intelligence artificielle bouleverse ce qui fonde la logique contractuelle entre les acteurs économiques : le rapport au temps. Au risque d’assister au décrochage des pays soucieux de préserver les protections sociales actuelles, prévient l’entrepreneur Sami Mahroum, dans une tribune au « Monde ».",
-      "published": "2026-03-22T09:00:05+00:00",
-      "weight": 1.3,
-      "language": "fr",
-      "score": 6.5,
-      "llm_summary": "L’article souligne que l’essor de l’IA redéfinit la valeur du travail des ingénieurs et consultants, passant d’une logique de temps passé à une évaluation basée sur leur maîtrise des systèmes d’IA. Sami Mahroum met en garde contre un risque de décrochage pour les pays attachés aux protections sociales traditionnelles, face à cette transformation des rapports économiques. Pour un étudiant en Data Science, cela souligne l’importance de se former aux outils d’IA générative et aux modèles avancés pour rester compétitif. La maîtrise de l’IA devient un critère clé de productivité et de valeur ajoutée, au-delà des heures travaillées. Une lecture cruciale pour anticiper les évolutions du marché du travail dans le secteur tech."
+      "llm_summary": "Afin d'obtenir une carrière en ingénierie de l'intelligence artificielle (IA) et du machine learning, un étudiant recommande : participer à des projets en équipe, suivre des cours avancés, développer son portefeuille avec des projets pratiques, apprendre des compétences de programmation et mathématiques supérieures (comme Python, Calcul Matriciel et Optimisation), s'inscrire à des conférences ou webinaires sur l'IA, collaborer à la communauté open-source et préparer un CV impeccable. Cela est particulièrement utile pour les étudiants en data science."
     }
   ],
   "profile_name": "Rémi Pierron"

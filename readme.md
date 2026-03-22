@@ -45,7 +45,7 @@ L'outil est pensé comme un **digest quotidien intelligent**, sans intervention 
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────┐
-│          TRAITEMENT LLM (Mistral API / HF)               │
+│          TRAITEMENT LLM (Mistral local)                  │
 │  Résumé par article · Résumé général · Scoring final    │
 └────────────────────────┬────────────────────────────────┘
                          │
@@ -65,7 +65,7 @@ L'outil est pensé comme un **digest quotidien intelligent**, sans intervention 
 | Langage principal | Python 3.11+ |
 | Collecte RSS | `feedparser` |
 | Scraping web | `requests`, `BeautifulSoup4` |
-| LLM | Mistral API (`Mistral Small 4`) |
+| LLM | Modèle Mistral local (`Mistral Small 4`) |
 | Recherche web temps réel | Claude API + web search tool |
 | Planification | `schedule` / `cron` |
 | Envoi e-mail | `smtplib` |
@@ -146,7 +146,7 @@ pip install -r requirements.txt
 
 # Configurer les variables d'environnement
 cp .env.example .env
-# → Renseigner MISTRAL_API_KEY, SMTP_PASSWORD, etc.
+# → Renseigner SMTP_PASSWORD, etc.
 
 # Lancer manuellement
 python main.py
